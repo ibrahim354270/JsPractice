@@ -1,0 +1,118 @@
+/* COMMON */
+@font-face {
+    font-family: AudiType-Normal;
+    src: local("AudiType-Normal"),
+        url(../fonts/AudiType-Normal.woff2) format("woff2"),
+        url(../fonts/AudiType-Normal.woff) format("woff"),
+        url(../fonts/AudiType-Normal.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-Bold;
+    src: local("AudiType-Bold"),
+        url(../fonts/AudiType-Bold.woff2) format("woff2"),
+        url(../fonts/AudiType-Bold.woff) format("woff"),
+        url(../fonts/AudiType-Bold.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-ExtendedNormal;
+    src: local("AudiType-ExtendedNormal"),
+        url(../fonts/AudiType-ExtendedNormal.woff2) format("woff2"),
+        url(../fonts/AudiType-ExtendedNormal.woff) format("woff"),
+        url(../fonts/AudiType-ExtendedNormal.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-ExtendedBold;
+    src: local("AudiType-ExtendedBold"),
+        url(../fonts/AudiType-ExtendedBold.woff2) format("woff2"),
+        url(../fonts/AudiType-ExtendedBold.woff) format("woff"),
+        url(../fonts/AudiType-ExtendedBold.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-WideNormal;
+    src: local("AudiType-WideNormal"),
+        url(../fonts/AudiType-WideNormal.woff2) format("woff2"),
+        url(../fonts/AudiType-WideNormal.woff) format("woff"),
+        url(../fonts/AudiType-WideNormal.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: AudiType-WideBold;
+    src: local("AudiType-WideBold"),
+        url(../fonts/AudiType-WideBold.woff2) format("woff2"),
+        url(../fonts/AudiType-WideBold.woff) format("woff"),
+        url(../fonts/AudiType-WideBold.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: "AudiType-WideNormal";
+}
+a {
+    text-decoration: none;
+}
+/* NAVBAR */
+.main-navbar .offcanvas.offcanvas-top {
+    height: auto;
+}
+.main-navbar .navbar-toggler {
+    border: none;
+    font-size: 1rem;
+    z-index: 1046;
+}
+.main-navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.main-navbar .navbar-brand {
+    z-index: 1046;
+}
+.main-navbar .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.main-navbar .toolbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+}
+.main-navbar .toolbar ul li:first-child{
+    opacity: 0.6;
+}
+.main-navbar .toolbar button{
+    border:none;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.main-navbar .toolbar .v-line {
+    width: 1px;
+    height: 30px;
+    background-color: black;
+}
+.main-navbar .toolbar img {
+    display: inline-block;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.main-navbar .toolbar .lang {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
