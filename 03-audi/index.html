@@ -21,7 +21,7 @@
     </head>
     <body>
         <nav class="main-navbar navbar bg-white fixed-top navbar-expand-xxl">
-            <div class="container">
+            <div class="container-xxl">
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -40,7 +40,11 @@
                         <i class="fa-solid fa-search"></i>
                     </button>
                     <span class="v-line d-none d-lg-block"></span>
-                    <img src="img/tr.svg" alt="Turkiye" class="d-none d-lg-block"/>
+                    <img
+                        src="img/tr.svg"
+                        alt="Turkiye"
+                        class="d-none d-lg-block"
+                    />
                 </div>
                 <div
                     class="offcanvas offcanvas-top"
@@ -55,31 +59,39 @@
                         >
                             <li class="nav-item">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link dropdown-toggle active"
                                     aria-current="page"
                                     href="#"
                                     >Company</a
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Innovation</a>
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    >Innovation</a
+                                >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sustainability</a>
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    >Sustainability</a
+                                >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Careers</a>
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    >Careers</a
+                                >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Audi in Sport</a>
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    >Audi in Sport</a
+                                >
                             </li>
                         </ul>
-                        <div class="toolbar">
-                            <button>
+                        <div class="toolbar d-lg-none d-xxl-flex">
+                            <button class="d-none d-lg-flex">
                                 <i class="fa-solid fa-search"></i>
                                 <span>Search</span>
                             </button>
-                            <span class="v-line"></span>
+                            <span class="v-line d-none d-lg-flex"></span>
                             <div class="lang">
                                 <img src="img/tr.svg" alt="Turkiye" />
                                 <ul>
@@ -92,6 +104,90 @@
                 </div>
             </div>
         </nav>
+        <section class="slider">
+            <div class="content">
+                <h1>When an idea becomes reality</h1>
+                <h5>From apprentice project to product for the streets</h5>
+                <button class="btn bt-outline-light"></button>
+            </div>
+            <video autoplay muted loop>
+                <source src="videos/audi.webm" type="video/webm" />
+            </video>
+        </section>
+        <section class="topics container-xxl">
+            <h2>Current topics from the world of Audi</h2>
+            <div class="row row-cols-1 row-cols-lg-3 g-5 g-lg-1">
+                <div class="col">
+                    <div class="card zoom-card">
+                        <div class="image">
+                            <img src="img/topic-1.jpg" alt="" />
+                        </div>
+                        <div class="card-body">
+                            <small class="card-subtitle">
+                                Drive Systems --- 01/23/2024
+                            </small>
+                            <h4 class="card-title">
+                                Major steps toward an electric future
+                            </h4>
+                            <div class="card-text">
+                                Who are the faces behind the Audi Q6 e-tron?
+                                Three employees talk about their journeys into
+                                the "world of electric mobility".
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card zoom-card">
+                        <div class="image">
+                            <img src="img/topic-2.jpg" alt="" />
+                        </div>
+                        <div class="card-body">
+                            <small class="card-subtitle">
+                                Decarbonization --- 12/01/2023
+                            </small>
+                            <h4 class="card-title">
+                                4 steps to net carbon neutrality¹ in Ingolstadt
+                            </h4>
+                            <div class="card-text">
+                                Production at the Audi plant in Ingolstadt will
+                                be net carbon-neutral as of January 1, 2024 -
+                                representing another important milestone on the
+                                path toward sustainable production at Audi's
+                                main plant. Four steps illustrate how Audi will
+                                achieve this goal.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card zoom-card">
+                        <div class="image">
+                            <img src="img/topic-3.jpg" alt="" />
+                        </div>
+                        <div class="card-body">
+                            <small class="card-subtitle">
+                                Sustainability --- 11/22/2023
+                            </small>
+                            <h4 class="card-title">
+                                "Our mission: to save even more lives around the
+                                world"
+                            </h4>
+                            <div class="card-text">
+                                In its new vehicle safety center, Audi subjects
+                                its vehicles to sophisticated crash tests to
+                                optimize them and increase safety standards -
+                                also taking into account the most demanding
+                                safety requirements used in the major markets of
+                                North America, China and Europe. A visit with
+                                the experts for crash tests and passive vehicle
+                                safety.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
