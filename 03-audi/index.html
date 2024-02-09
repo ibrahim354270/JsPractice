@@ -1,197 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Audi.com - the international Audi website | audi.com</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <nav class="main-navbar navbar bg-white fixed-top navbar-expand-xxl">
-            <div class="container-xxl">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span> Menu
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.svg" alt="" />
-                </a>
-                <div class="toolbar d-xxl-none">
-                    <button>
-                        <i class="fa-solid fa-search"></i>
-                    </button>
-                    <span class="v-line d-none d-lg-block"></span>
-                    <img
-                        src="img/tr.svg"
-                        alt="Turkiye"
-                        class="d-none d-lg-block"
-                    />
-                </div>
-                <div
-                    class="offcanvas offcanvas-top"
-                    tabindex="-1"
-                    id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel"
-                >
-                    <div class="offcanvas-header"></div>
-                    <div class="offcanvas-body">
-                        <ul
-                            class="navbar-nav justify-content-start flex-grow-1 pe-3"
-                        >
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link dropdown-toggle active"
-                                    aria-current="page"
-                                    href="#"
-                                    >Company</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    >Innovation</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    >Sustainability</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    >Careers</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    >Audi in Sport</a
-                                >
-                            </li>
-                        </ul>
-                        <div class="toolbar d-lg-none d-xxl-flex">
-                            <button class="d-none d-lg-flex">
-                                <i class="fa-solid fa-search"></i>
-                                <span>Search</span>
-                            </button>
-                            <span class="v-line d-none d-lg-flex"></span>
-                            <div class="lang">
-                                <img src="img/tr.svg" alt="Turkiye" />
-                                <ul>
-                                    <li>Audi in your Region:</li>
-                                    <li>Turkiye</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <section class="slider">
-            <div class="content">
-                <h1>When an idea becomes reality</h1>
-                <h5>From apprentice project to product for the streets</h5>
-                <button class="btn bt-outline-light"></button>
-            </div>
-            <video autoplay muted loop>
-                <source src="videos/audi.webm" type="video/webm" />
-            </video>
-        </section>
-        <section class="topics container-xxl">
-            <h2>Current topics from the world of Audi</h2>
-            <div class="row row-cols-1 row-cols-lg-3 g-5 g-lg-1">
-                <div class="col">
-                    <div class="card zoom-card">
-                        <div class="image">
-                            <img src="img/topic-1.jpg" alt="" />
-                        </div>
-                        <div class="card-body">
-                            <small class="card-subtitle">
-                                Drive Systems --- 01/23/2024
-                            </small>
-                            <h4 class="card-title">
-                                Major steps toward an electric future
-                            </h4>
-                            <div class="card-text">
-                                Who are the faces behind the Audi Q6 e-tron?
-                                Three employees talk about their journeys into
-                                the "world of electric mobility".
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card zoom-card">
-                        <div class="image">
-                            <img src="img/topic-2.jpg" alt="" />
-                        </div>
-                        <div class="card-body">
-                            <small class="card-subtitle">
-                                Decarbonization --- 12/01/2023
-                            </small>
-                            <h4 class="card-title">
-                                4 steps to net carbon neutrality¹ in Ingolstadt
-                            </h4>
-                            <div class="card-text">
-                                Production at the Audi plant in Ingolstadt will
-                                be net carbon-neutral as of January 1, 2024 -
-                                representing another important milestone on the
-                                path toward sustainable production at Audi's
-                                main plant. Four steps illustrate how Audi will
-                                achieve this goal.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card zoom-card">
-                        <div class="image">
-                            <img src="img/topic-3.jpg" alt="" />
-                        </div>
-                        <div class="card-body">
-                            <small class="card-subtitle">
-                                Sustainability --- 11/22/2023
-                            </small>
-                            <h4 class="card-title">
-                                "Our mission: to save even more lives around the
-                                world"
-                            </h4>
-                            <div class="card-text">
-                                In its new vehicle safety center, Audi subjects
-                                its vehicles to sophisticated crash tests to
-                                optimize them and increase safety standards -
-                                also taking into account the most demanding
-                                safety requirements used in the major markets of
-                                North America, China and Europe. A visit with
-                                the experts for crash tests and passive vehicle
-                                safety.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Audi.com - the international Audi website | audi.com</title>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<nav class="main-navbar navbar bg-white fixed-top navbar-expand-xxl">
+			<div class="container-xxl">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span> Menu
+				</button>
+
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.svg" alt="" />
+				</a>
+
+				<div class="toolbar d-xxl-none">
+					<button class="button">
+						<i class="fa-solid fa-search"></i>
+					</button>
+					<span class="v-line d-none d-lg-block"></span>
+					<img
+						src="img/tr.svg"
+						alt="Turkiye"
+						class="d-none d-lg-block"
+					/>
+				</div>
+
+				<div
+					class="offcanvas offcanvas-top"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header"></div>
+					<div class="offcanvas-body">
+						<ul
+							class="navbar-nav justify-content-start flex-grow-1 pe-3"
+						>
+							<li class="nav-item">
+								<a
+									class="nav-link dropdown-toggle active"
+									aria-current="page"
+									href="#"
+									>Company</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle" href="#"
+									>Innovation</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle" href="#"
+									>Sustainability</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle" href="#"
+									>Careers</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle" href="#"
+									>Audi in Sport</a
+								>
+							</li>
+						</ul>
+
+						<div class="toolbar d-lg-none d-xxl-flex">
+							<button class="button" class="d-none d-lg-flex">
+								<i class="fa-solid fa-search"></i>
+								<span>Search</span>
+							</button>
+							<span class="v-line d-none d-lg-flex"></span>
+
+							<div class="lang">
+								<img src="img/tr.svg" alt="Turkiye" />
+								<ul>
+									<li>Audi in your Region:</li>
+									<li>Turkiye</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="slider">
+			<div class="content">
+				<h1>When an idea becomes reality</h1>
+				<h5>From apprentice project to product for the streets</h5>
+				<button class="button light mt-2">Read more</button>
+			</div>
+
+			<video autoplay muted loop>
+				<source src="videos/audi.webm" type="video/webm" />
+			</video>
+		</section>
+
+		<section class="topics container-xxl">
+			<h2>Current topics from the world of Audi</h2>
+			<div class="row row-cols-1 row-cols-lg-3 g-5 g-lg-1">
+				<div class="col">
+					<div class="card zoom-card">
+						<div class="image">
+							<img src="img/topic-1.jpg" alt="" />
+						</div>
+
+						<div class="card-body">
+							<small class="card-subtitle">
+								Drive Systems --- 01/23/2024
+							</small>
+							<h4 class="card-title">
+								Major steps toward an electric future
+							</h4>
+							<div class="card-text">
+								Who are the faces behind the Audi Q6 e-tron?
+								Three employees talk about their journeys into
+								the "world of electric mobility".
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card zoom-card">
+						<div class="image">
+							<img src="img/topic-2.jpg" alt="" />
+						</div>
+
+						<div class="card-body">
+							<small class="card-subtitle">
+								Decarbonization --- 12/01/2023
+							</small>
+							<h4 class="card-title">
+								4 steps to net carbon neutrality¹ in Ingolstadt
+							</h4>
+							<div class="card-text">
+								Production at the Audi plant in Ingolstadt will
+								be net carbon-neutral as of January 1, 2024 -
+								representing another important milestone on the
+								path toward sustainable production at Audi's
+								main plant. Four steps illustrate how Audi will
+								achieve this goal.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card zoom-card">
+						<div class="image">
+							<img src="img/topic-3.jpg" alt="" />
+						</div>
+
+						<div class="card-body">
+							<small class="card-subtitle">
+								Sustainability --- 11/22/2023
+							</small>
+							<h4 class="card-title">
+								"Our mission: to save even more lives around the
+								world"
+							</h4>
+							<div class="card-text">
+								In its new vehicle safety center, Audi subjects
+								its vehicles to sophisticated crash tests to
+								optimize them and increase safety standards -
+								also taking into account the most demanding
+								safety requirements used in the major markets of
+								North America, China and Europe. A visit with
+								the experts for crash tests and passive vehicle
+								safety.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="highlight container-xxl">
+			<div class="row row-cols-1 row-cols-lg-2 g-3 flex-lg-row-reverse">
+				<div class="col">
+					<img src="img/electric-car.jpg" alt="" class="img-fluid" />
+				</div>
+				<div class="col">
+					<h2>Full electric speed ahead</h2>
+					<p>
+						Audi recently underpinned its clear course toward
+						electromobility with strong figures and important
+						milestones. How the Four Rings are progressing on their
+						path to successful electrification.
+					</p>
+					<button class="button">Read more</button>
+
+					<div class="spec">
+						<p>
+							Audi Q8 Sportback e-tron:Power consumption
+							(combined*) in kWh/100 km: 24.1-19.5CO₂ emissions
+							(combined*) in g/km: 0
+						</p>
+
+						<p>
+							Information on fuel/power consumption and CO₂
+							emissions with ranges depending on the selected
+							equipment of the vehicle.
+						</p>
+						<p>
+							Only consumption and emission values according to
+							WLTP and not according to NEDC are available for the
+							vehicle.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="highlight container-xxl">
+			<div class="row row-cols-1 row-cols-lg-2 g-3">
+				<div class="col">
+					<img
+						src="img/working-in-progress.jpg"
+						alt=""
+						class="img-fluid"
+					/>
+				</div>
+				<div class="col">
+					<h2>#WorkingInProgress</h2>
+					<p>
+						Help us to design the mobility of tomorrow. With cars
+						that use state-of-the-art technology to offer an awesome
+						driving experience and, at the same time, pave the way
+						into a future that is digital, sustainable and electric.
+					</p>
+					<button class="button">Read more</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="press container-xxl">
+			<h2>Press releases</h2>
+			<div class="row row-cols-1 row-cols-lg-3 g-5 g-lg-1">
+				<div class="col">
+					<div class="card zoom-card">
+						<div class="image">
+							<img src="img/press-1.jpg" alt="" />
+						</div>
+
+						<div class="card-body">
+							<small class="card-subtitle">
+								Audi MediaCenter --- 02/09/2024
+							</small>
+							<h4 class="card-title">
+								Facts and figures on Audi’s Dakar victory
+							</h4>
+							<div class="card-text">To the press release</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card zoom-card">
+						<div class="image">
+							<img src="img/press-2.jpg" alt="" />
+						</div>
+
+						<div class="card-body">
+							<small class="card-subtitle">
+								Audi MediaCenter --- 02/06/2024
+							</small>
+							<h4 class="card-title">
+								When a model reaches its maximum: The New Audi
+								RS 6 Avant GT
+							</h4>
+							<div class="card-text">To the press release</div>
+							<div class="spec">
+								Audi RS 6 Avant GT: Combined fuel consumption in
+								l/100 km (62.1 mi): 12.7-12.2 (18.5-19.3 US
+								mpg); combined CO2 emissions in g/km: 289-277
+								(465.1-445.8 g/mi)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card zoom-card">
+						<div class="image">
+							<img src="img/press-3.jpg" alt="" />
+						</div>
+
+						<div class="card-body">
+							<small class="card-subtitle">
+								Audi MediaCenter --- 02/02/2024
+							</small>
+							<h4 class="card-title">
+								Audi Tradition at many international events in
+								2024
+							</h4>
+							<div class="card-text">To the press release</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-5">
+				<button class="button bgdark">To The Audi Media Center</button>
+			</div>
+		</section>
+
+		<section class="highlight container-xxl">
+			<div class="row row-cols-1 row-cols-lg-2 g-3">
+				<div class="col">
+					<img src="img/models.jpg" alt="" class="img-fluid" />
+				</div>
+				<div class="col">
+					<h2>
+						At Audi you'll find the right vehicle for every
+						requirement
+					</h2>
+					<p>
+						Sporty, luxurious, or compact - at Audi you will find
+						the right vehicle for every requirement. Discover and
+						configure our series models now.
+					</p>
+					<button class="button">Discover all models</button>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-dark mt-5 text-light py-5">
+			<div class="container-xxl p-0">
+				<ul class="social">
+					<li>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-youtube"></i></a>
+					</li>
+				</ul>
+
+				<div
+					class="accordion"
+					id="accordionExample"
+					data-bs-theme="dark"
+				>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseOne"
+								aria-expanded="false"
+								aria-controls="collapseOne"
+							>
+								Topics
+							</button>
+						</h2>
+						<div
+							id="collapseOne"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								<ul>
+									<li><a href="#">Company</a></li>
+									<li><a href="#">Innovation</a></li>
+									<li><a href="#">Sustainability</a></li>
+									<li><a href="#">Career</a></li>
+									<li><a href="#">Audi in sport</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseThree"
+								aria-expanded="false"
+								aria-controls="collapseThree"
+							>
+								AUDI AG
+							</button>
+						</h2>
+						<div
+							id="collapseThree"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								<ul>
+									<li><a href="#">Audi Report 2022</a></li>
+									<li>
+										<a href="#">Documents & Policies</a>
+									</li>
+									<li><a href="#">Financial Calendar</a></li>
+									<li><a href="#">Management</a></li>
+									<li><a href="#">Locations</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo"
+								aria-expanded="false"
+								aria-controls="collapseTwo"
+							>
+								Services
+							</button>
+						</h2>
+						<div
+							id="collapseTwo"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								<ul>
+									<li><a href="#">myAudi</a></li>
+									<li><a href="#">Press</a></li>
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">Job portal</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright row mt-5 g-4">
+					<div class="col-auto">
+						&copy; AUDI AG. All rights reserved
+					</div>
+					<div class="col-auto">
+						<ul class="menu">
+							<li><a href="#">Legal notice</a></li>
+							<li><a href="#">Whistleblower System</a></li>
+							<li><a href="#">Cookie Policy</a></li>
+							<li><a href="#">Legal</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Cookie Consent Options</a></li>
+						</ul>
+					</div>
+					<div class="col-auto">
+						<div class="dropdown" data-bs-theme="dark">
+							<button
+								class="btn btn-dark dropdown-toggle"
+								type="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<i class="fa-solid fa-globe"></i> English
+							</button>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#"
+										>English</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Deutsch</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">French</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
