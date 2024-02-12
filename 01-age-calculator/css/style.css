@@ -1,0 +1,22 @@
+.age-form .form-label{
+    font-weight: 700;
+    color: rgb(3, 112, 163);
+}
+.result{
+    text-align: center;
+    margin: 30px;
+
+}
+
+.result .display{
+    display: inline-block;
+    text-align: left;
+}
+
+.result .display h2{
+    font-size: 3rem;
+}
+
+.result .display span{
+    color: rgb(3, 112, 163);
+}
