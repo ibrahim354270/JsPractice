@@ -1,0 +1,113 @@
+.title{
+    text-align: center;
+}
+.display{
+    background-color: gray;
+    height: 5px;
+    margin: 70px 20px;
+    display: flex;
+    position: relative;
+}
+.display > div[class^="section"]{
+    height: 100%;
+    position: relative;
+}
+.display .section1{
+    background-image: linear-gradient(90deg, gray, greenyellow);
+    flex: 0 0 37%;
+}
+.display .section2{
+    background-color: greenyellow;
+    flex: 0 0 13%;
+}
+.display .section3{
+    background-image: linear-gradient(90deg, greenyellow, pink);
+    flex: 0 0 10%;
+}
+.display .section4{
+    background-image: linear-gradient(90deg, pink, red);
+    flex: 0 0 40%;
+}
+.display > div[class^="section"]::before{
+    position: absolute;
+    top:0;
+    width:100%;
+    padding: 2px 7px;
+    text-align: center;
+    border-left: 1px solid gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform: translateY(-100%) ;
+    -webkit-transform: translateY(-100%) ;
+    -moz-transform: translateY(-100%) ;
+    -ms-transform: translateY(-100%) ;
+    -o-transform: translateY(-100%) ;
+}
+.display > .section1::before{
+    content: "Thin";
+}
+.display > .section2::before{
+    content: "Ideal";
+}
+.display > .section3::before{
+    content: "Overweight";
+}
+.display > .section4::before{
+    content: "Obese";
+    border-right: 1px solid gray;
+}
+.indicator{
+    position: absolute;
+    left:0;
+    top:10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.indicator label{
+    position: absolute;
+    left: 20px;
+    background-color: gray;
+    font-size: 0.9rem;
+    padding: 3px;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.frmBmi{
+    margin: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.frmBmi > *{
+    flex: 1 1 300px;
+}
+
+.frmBmi span{
+    background: none;
+    
+}
+
+.frmBmi input{
+    border-left:none;
+    border-right:none;
+}
+
+.frmBmi .form-control:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+
+/*
+0 ile 18 Arası VKE - Zayıf: / 37%
+19 ile 25 Arası VKE - Normal: / 13%
+26 ile 30 Arası VKE - Fazla Kilolu: /10%
+31 ile 50 VKE - Obez: 40%
+*/
