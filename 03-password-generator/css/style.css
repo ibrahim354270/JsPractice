@@ -71,3 +71,13 @@ body{
     width: 100%;
     font-weight: 500;
 }
+
+.password-generator .weak{
+    color: red;
+}
+.password-generator .normal{
+    color: orange;
+}
+.password-generator .strong{
+    color: green;
+}
