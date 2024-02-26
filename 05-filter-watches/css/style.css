@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    padding: 50px;
+}
+.leftMenu{
+    flex: 1;
+}
+.search{
+    padding: 10px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+h1{
+    color: rgb(157, 155, 155);
+    font-size: 2.3rem;
+    font-weight: 400;
+  
+}
+.content{
+    flex: 3;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+}
+img{
+    width: 150px;
+    height: 200px;  
+}
+.name{
+    font-size: 1.5rem;
+}
+.price{
+    font-size: 1.2rem;
+}
