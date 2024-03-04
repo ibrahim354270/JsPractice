@@ -5,6 +5,7 @@ buttonEl.addEventListener("click",async (e)=>{
    e.preventDefault()
  let cityName=  cityInputEl.value
 const weatherData= await getWeatherData(cityName)
+displayResult(weatherData) 
  
 })
 const getWeatherData =async (cityName) => { 
@@ -22,3 +23,18 @@ const getWeatherData =async (cityName) => {
    }
    
 }
+const  displayResult= (data) => { 
+let cityname=document.getElementById("city")
+cityname.innerHTML=`${data.name} / ${data.sys.country}`
+let temprature=  document.querySelector(".temp")
+temprature.innerHTML=kelvinToCelcius(`${data.main.temp}`) 
+let stateWeather=document.getElementById("weatherValue")
+stateWeather.innerHTML=`${data.weather[0].description}`
+let feelsLike=document.getElementById("felt-warmth")
+feelsLike.innerHTML=kelvinToCelcius(`${data.main.feels_like}`) 
+ }
+
+
+ const kelvinToCelcius = (temp) => { 
+   return `${(temp-273.15).toFixed(0)}`
+  }
